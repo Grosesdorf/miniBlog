@@ -1,0 +1,14 @@
+body {
+	text-align: center;
+}
+
+.message {
+	text-align: left;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: ridge;
+}
+
+.button-bottom {
+	float: right;
+}
