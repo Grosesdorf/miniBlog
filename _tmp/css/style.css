@@ -1,0 +1,48 @@
+body {
+	text-align: center;
+}
+
+.message {
+	text-align: left;
+	padding: 5px;
+	margin-bottom: 15px;
+	border: ridge;
+}
+
+.messages {
+	margin-right: 20%;
+	margin-left: 20%; 
+	padding: 10px;
+}
+
+.frame-message iframe {
+	top: 50px;
+	width: 100%;
+	height: 600px;
+}
+
+.button-top {	
+	float: left;
+	margin-bottom: 5px;
+}
+
+.button-bottom {
+	text-align: right;
+}
+
+a.btn {
+  color: #696969;
+  text-decoration: none;
+  user-select: none;
+  background: #F0E68C;
+  padding: .1em 0.5em;
+  outline: none;
+}
+
+a.btn:hover { 
+	background: #FFD700; 
+}
+
+a.btn:active { 
+	background: #BDB76B; 
+}
