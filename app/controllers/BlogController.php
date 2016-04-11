@@ -1,11 +1,12 @@
 <?php
 
 include_once ROOT . '/app/models/Blog.php';
+include_once ROOT . '/app/models/Comment.php';
 
 class BlogController{
 
     public function actionIndex(){
-        
+
         $blogsList = Blog::getBlogsList();
 
         require_once(ROOT . '/app/views/blog/blogsListView.php');
@@ -14,14 +15,12 @@ class BlogController{
     }
 
     public function actionView($id){
-        if($id){
-            $blogItem = Blog::getBlogItemById($id);
+        
+        $blogItem = Blog::getBlogItemById($id);
+        $commentsList = Comment::getCommentListById($id);
 
-            // require_once(ROOT . '/app/views/blog/blogItemView.php');
-
-            echo "ControllerBlog Index ID";
-        }
-
+        require_once(ROOT . '/app/views/blog/blogViewById.php');
+        
         return true;
     }
 

@@ -2,21 +2,6 @@
 
 class Blog{
 
-    public static function getBlogItemById($id){
-
-        $db = Db::getConnection();
-
-        $result = $db->query('SELECT * '
-            . 'FROM blogs '
-            . 'WHERE id = ' . $id);
-
-        $result->setFetchMode(PDO::FETCH_ASSOC);
-        $newsItem = $result->fetch();
-
-        return $blogItem;
-
-    }
-
     public static function getBlogsList(){
 
         $db = Db::getConnection();
@@ -42,8 +27,19 @@ class Blog{
 
             return false;
         }
+    }
 
-        
+    public static function getBlogItemById($id){
 
+        $db = Db::getConnection();
+
+        $result = $db->query('SELECT * '
+            . 'FROM blogs '
+            . 'WHERE id = ' . $id);
+
+        $result->setFetchMode(PDO::FETCH_ASSOC);
+        $blogItem = $result->fetch();
+
+        return $blogItem;
     }
 }

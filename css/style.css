@@ -1,5 +1,14 @@
+*:focus {outline: none;}
+
 body {
+	font: 14px/21px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
 	text-align: center;
+}
+
+img {
+	height: 40px;
+	width: 40px;
+	padding-right: 10px;
 }
 
 .message {
@@ -30,7 +39,7 @@ body {
 	text-align: right;
 }
 
-a.btn {
+.btn {
   color: #696969;
   text-decoration: none;
   user-select: none;
@@ -39,10 +48,72 @@ a.btn {
   outline: none;
 }
 
-a.btn:hover { 
+.btn:hover { 
 	background: #FFD700; 
 }
 
-a.btn:active { 
+.btn:active { 
 	background: #BDB76B; 
+}
+
+ul {
+    width:100%;
+    list-style-type:none;
+    list-style-position:outside;
+    margin: 0px;
+    padding: 0px;
+}
+li {
+    padding: 5px;
+    position: relative;
+}
+
+.add-comment label {
+	font-family: Georgia, Times, "Times New Roman", serif;
+	width: 60px;
+    margin-top: 2px;
+    display: inline-block;
+    float: left;
+    padding: 2px;
+}
+
+legend {
+	font-size: 20px;
+}
+
+.add-comment input {
+    height:25px;
+    width:220px;
+    padding:2px 5px;
+}
+.add-comment textarea {
+	padding: 5px; 
+	width: 285px;
+}
+
+.add-comment button {
+	margin-left:180px;
+}
+
+.required {
+    color: red;
+    margin: 5px 0 0 0;
+    display: inline;
+}
+
+.list-comment {
+	margin-top: 5px;
+	padding-top: 10px;
+}
+
+.list-comment li {
+	margin-left: 10px;
+}
+
+:-moz-placeholder {
+	color: #696969;
+}
+
+::-webkit-input-placeholder {
+	color: #696969;
 }

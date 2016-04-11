@@ -1,22 +1,21 @@
 <?php
-
-// FRONT CONTROLLER
-
-// 1. Settings
-
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
-
-// 2. Include system files
-
-define('ROOT', dirname(__FILE__));
-require_once(ROOT . '/app/core/Router.php');
-
-// 3. DB connection
-
-require_once(ROOT . '/app/core/Db.php');
-
-// 4. Call Router
-
-$router = new Router();
-$router->run();
+?>
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>MiniBlog</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>My MiniBlog</h1>
+    <div class="messages">
+	    <div class="button-top">
+	    	<a href="#" class="btn">Add new post</a>
+	    </div>
+	    <div class="frame-message">
+	    	<iframe src="http://miniblog/bootstrap.php/" name="frame" scrolling="yes" noresize></iframe>
+	    </div>
+	</div>
+  </body>
+</html>

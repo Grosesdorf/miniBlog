@@ -11,10 +11,10 @@
 	    <div class="message">
             <h2><?php echo $blogItem['title'];?></h2>
     		<p>Дата публикации <?php echo $blogItem['date_create'];?></p>
-            <p><?php echo $blogItem['text_blog'];?></p>
+            <p><?php echo $blogItem['text_blog'];?><a href="blog/<?php echo $blogItem['id'];?>" class="btn">...ReadMore</a></p>
             <div class="button-bottom">
-            <a href="index.php?id=<?php echo $blogItem['id'];?>" class="btn">edit</a>
-            <a href="/index.php/<?php echo $blogItem['id'];?>" class="btn">delete</a>
+            <a href="#" class="btn">edit</a>
+            <a href="#" class="btn">delete</a>
             </div>
 		</div>
     <?php endforeach;?>
